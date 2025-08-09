@@ -1,0 +1,31 @@
+### IntelliJ IDEA ###
+.idea
+*.iml
+
+### Eclipse ###
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### OS ###
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.swp
+*~
+
+### Environment ###
+.env
+.env.local
+.env.*.local
