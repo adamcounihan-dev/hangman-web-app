@@ -1,0 +1,19 @@
+{
+  "categories": {
+    "animals": {
+      "easy": ["cat", "dog", "fish", "duck", "fox", "ant", "goat", "eel", "bird", "frog", "bear", "bee", "shark", "snake"],
+      "medium": ["elephant", "giraffe", "badger", "chicken", "dolphin", "cricket", "spider", "hamster", "rabbit", "turtle", "lizard", "penguin" ],
+      "hard": ["hippopotamus", "cockroach", "crocodile", "rhinoceros", "chimpanzee", "butterfly", "octopus", "kangaroo" ]
+    },
+    "countries": {
+      "easy": ["spain", "iran", "iraq", "japan", "india", "chile", "peru", "egypt", "italy", "china", "malta", "cuba", "fiji", "wales", "haiti"],
+      "medium": ["germany", "brazil", "ireland", "poland", "norway", "france", "turkey", "mexico", "canada", "russia", "sweden", "greece", "england"],
+      "hard": ["afghanistan", "bangladesh", "venezuela", "guatemala", "argentina", "australia", "singapore", "macedonia", "lithuania", "nicaragua", "united kingdom"]
+    },
+    "food": {
+      "easy": ["apple", "bread", "pizza", "rice", "pasta", "corn", "egg", "fish", "cake", "soup", "meat", "bean", "nuts"],
+      "medium": ["chicken", "salmon", "banana", "orange", "tomato", "potato", "cheese", "yogurt", "cookie", "lettuce", "pancake"],
+      "hard": ["hamburger", "spaghetti", "broccoli", "chocolate", "blueberry", "strawberry", "watermelon", "pineapple", "raspberry", "sweetcorn"]
+    }
+  }
+}

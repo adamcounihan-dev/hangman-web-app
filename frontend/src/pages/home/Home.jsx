@@ -16,7 +16,7 @@ const Home = () => {
                         <div className={styles.difficultyoptions}>
                             <button className={styles.difficultybutton}>
                                 <div className={styles.difficultylabel}>Easy</div>
-                                <div className={styles.difficultydesc}>4-6 letters</div>
+                                <div className={styles.difficultydesc}>3-5 letters</div>
                             </button >
                             <button className={styles.difficultybutton}>
                                 <div className={styles.difficultylabel}>Medium</div>
@@ -24,7 +24,7 @@ const Home = () => {
                             </button>
                             <button className={styles.difficultybutton}>
                                 <div className={styles.difficultylabel}>Hard</div>
-                                <div className={styles.difficultydesc}>8+ letters</div>
+                                <div className={styles.difficultydesc}>9+ letters</div>
                             </button>
                         </div>
                     </section>
