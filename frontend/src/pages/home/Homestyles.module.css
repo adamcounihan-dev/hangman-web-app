@@ -66,6 +66,10 @@
     justify-content: center;
 }
 
+.selected {
+    border: 2px solid var(--button-color);
+}
+
 .difficultylabel {
     font-weight: 600;
     margin-bottom: 4px;
