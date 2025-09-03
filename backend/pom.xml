@@ -53,7 +53,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
                 <configuration>
-                    <mainClass>dev.adamcounihan.hangman.Main</mainClass>
+                    <mainClass>dev.adamcounihan.hangman.HangmanApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
