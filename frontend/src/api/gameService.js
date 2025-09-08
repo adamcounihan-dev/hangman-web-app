@@ -12,7 +12,12 @@ const api = axios.create({
  * Creates a new hangman game
  * @param {'easy'|'medium'|'hard'} difficulty - Difficulty level
  * @param {'animals'|'countries'|'food'|'all'} category - Word category
- * @returns {Promise<{gameId: string, maskedWord: string, livesRemaining: number, gameStatus: string}>}
+ * @returns {Promise<{
+ *   gameId: string,           // Unique identifier for the game session
+ *   maskedWord: string,        // Initial masked word (e.g., "_ _ _ _")
+ *   livesRemaining: number,    // Starting lives
+ *   gameStatus: 'IN_PROGRESS'  // New games always start as IN_PROGRESS
+ * }>}
  * @throws {GameApiError} Structured error with code, status, and message
  */
 export const createNewGame = async (difficulty, category) => {
@@ -27,7 +32,13 @@ export const createNewGame = async (difficulty, category) => {
 /**
  * Fetches the current state of a hangman game
  * @param {string} gameId - The ID of the game to fetch
- * @returns {Promise<{gameId: string, maskedWord: string, livesRemaining: number, gameStatus: string, guesses: string[]}>}
+ * @returns {Promise<{
+ *   gameId: string,                        // Game identifier
+ *   maskedWord: string,                    // Current word state (e.g., "E _ E P H A N T")
+ *   livesRemaining: number,                // Lives left
+ *   gameStatus: 'IN_PROGRESS'|'WON'|'LOST', // Current game status
+ *   guesses: string[]                      // Array of guessed letters (e.g., ["E", "A", "X"])
+ * }>}
  * @throws {GameApiError} Structured error with code, status, and message
  */
 export const getGameState = async (gameId) => {
@@ -42,8 +53,14 @@ export const getGameState = async (gameId) => {
 /**
  * Submits a guess for a specific hangman game
  * @param {string} gameId - The ID of the game
- * @param {string} letter - The guessed letter
- * @returns {Promise<{gameId: string, maskedWord: string, livesRemaining: number, gameStatus: string, guesses: string[]}>}
+ * @param {string} letter - The guessed letter (single character, case-insensitive)
+ * @returns {Promise<{
+ *   gameId: string,                        // Game identifier
+ *   maskedWord: string,                    // Updated word state after guess
+ *   livesRemaining: number,                // Updated lives (decrements if wrong)
+ *   gameStatus: 'IN_PROGRESS'|'WON'|'LOST', // Updated status (may change to WON/LOST)
+ *   guesses: string[]                      // Updated array including new guess
+ * }>}
  * @throws {GameApiError} Structured error with code, status, and message
  */
 export const makeGuess = async (gameId, letter) => {
