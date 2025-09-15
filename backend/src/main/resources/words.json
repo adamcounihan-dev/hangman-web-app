@@ -1,19 +1,19 @@
 {
   "categories": {
     "animals": {
-      "easy": ["cat", "dog", "fish", "duck", "fox", "ant", "goat", "eel", "bird", "frog", "bear", "bee", "shark", "snake"],
-      "medium": ["elephant", "giraffe", "badger", "chicken", "dolphin", "cricket", "spider", "hamster", "rabbit", "turtle", "lizard", "penguin" ],
-      "hard": ["hippopotamus", "cockroach", "crocodile", "rhinoceros", "chimpanzee", "butterfly", "octopus", "kangaroo" ]
+      "easy": ["CAT", "DOG", "FISH", "DUCK", "FOX", "ANT", "GOAT", "EEL", "BIRD", "FROG", "BEAR", "BEE", "SHARK", "SNAKE"],
+      "medium": ["ELEPHANT", "GIRAFFE", "BADGER", "CHICKEN", "DOLPHIN", "CRICKET", "SPIDER", "HAMSTER", "RABBIT", "TURTLE", "LIZARD", "PENGUIN"],
+      "hard": ["HIPPOPOTAMUS", "COCKROACH", "CROCODILE", "RHINOCEROS", "CHIMPANZEE", "BUTTERFLY", "OCTOPUS", "KANGAROO"]
     },
     "countries": {
-      "easy": ["spain", "iran", "iraq", "japan", "india", "chile", "peru", "egypt", "italy", "china", "malta", "cuba", "fiji", "wales", "haiti"],
-      "medium": ["germany", "brazil", "ireland", "poland", "norway", "france", "turkey", "mexico", "canada", "russia", "sweden", "greece", "england"],
-      "hard": ["afghanistan", "bangladesh", "venezuela", "guatemala", "argentina", "australia", "singapore", "macedonia", "lithuania", "nicaragua", "united kingdom"]
+      "easy": ["SPAIN", "IRAN", "IRAQ", "JAPAN", "INDIA", "CHILE", "PERU", "EGYPT", "ITALY", "CHINA", "MALTA", "CUBA", "FIJI", "WALES", "HAITI"],
+      "medium": ["GERMANY", "BRAZIL", "IRELAND", "POLAND", "NORWAY", "FRANCE", "TURKEY", "MEXICO", "CANADA", "RUSSIA", "SWEDEN", "GREECE", "ENGLAND"],
+      "hard": ["AFGHANISTAN", "BANGLADESH", "VENEZUELA", "GUATEMALA", "ARGENTINA", "AUSTRALIA", "SINGAPORE", "MACEDONIA", "LITHUANIA", "NICARAGUA", "UNITED KINGDOM"]
     },
     "food": {
-      "easy": ["apple", "bread", "pizza", "rice", "pasta", "corn", "egg", "fish", "cake", "soup", "meat", "bean", "nuts"],
-      "medium": ["chicken", "salmon", "banana", "orange", "tomato", "potato", "cheese", "yogurt", "cookie", "lettuce", "pancake"],
-      "hard": ["hamburger", "spaghetti", "broccoli", "chocolate", "blueberry", "strawberry", "watermelon", "pineapple", "raspberry", "sweetcorn"]
+      "easy": ["APPLE", "BREAD", "PIZZA", "RICE", "PASTA", "CORN", "EGG", "FISH", "CAKE", "SOUP", "MEAT", "BEAN", "NUTS"],
+      "medium": ["CHICKEN", "SALMON", "BANANA", "ORANGE", "TOMATO", "POTATO", "CHEESE", "YOGURT", "COOKIE", "LETTUCE", "PANCAKE"],
+      "hard": ["HAMBURGER", "SPAGHETTI", "BROCCOLI", "CHOCOLATE", "BLUEBERRY", "STRAWBERRY", "WATERMELON", "PINEAPPLE", "RASPBERRY", "SWEETCORN"]
     }
   }
 }
