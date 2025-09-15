@@ -14,7 +14,7 @@ const api = axios.create({
  * @param {'animals'|'countries'|'food'|'all'} category - Word category
  * @returns {Promise<{
  *   gameId: string,           // Unique identifier for the game session
- *   maskedWord: string,        // Initial masked word (e.g., "_ _ _ _")
+ *   maskedTokens: string[],    // Initial tokens, all underscores (e.g ["_", "_", "_"])
  *   livesRemaining: number,    // Starting lives
  *   gameStatus: 'IN_PROGRESS'  // New games always start as IN_PROGRESS
  * }>}
@@ -34,7 +34,7 @@ export const createNewGame = async (difficulty, category) => {
  * @param {string} gameId - The ID of the game to fetch
  * @returns {Promise<{
  *   gameId: string,                        // Game identifier
- *   maskedWord: string,                    // Current word state (e.g., "E _ E P H A N T")
+ *   maskedTokens: string[],                // Current tokens (e.g., ["E", "_", "E", "P", "H", "A", "N", "T"])
  *   livesRemaining: number,                // Lives left
  *   gameStatus: 'IN_PROGRESS'|'WON'|'LOST', // Current game status
  *   guesses: string[]                      // Array of guessed letters (e.g., ["E", "A", "X"])
@@ -56,7 +56,7 @@ export const getGameState = async (gameId) => {
  * @param {string} letter - The guessed letter (single character, case-insensitive)
  * @returns {Promise<{
  *   gameId: string,                        // Game identifier
- *   maskedWord: string,                    // Updated word state after guess
+ *   maskedTokens: string[],                // Updated tokens after guess
  *   livesRemaining: number,                // Updated lives (decrements if wrong)
  *   gameStatus: 'IN_PROGRESS'|'WON'|'LOST', // Updated status (may change to WON/LOST)
  *   guesses: string[]                      // Updated array including new guess
